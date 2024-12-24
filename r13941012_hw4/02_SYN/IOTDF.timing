@@ -1,0 +1,70 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IOTDF
+Version: U-2022.12
+Date   : Mon Nov 18 20:25:10 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: fn_sel_reg_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_r_reg[25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  fn_sel_reg_reg[1]/CK (DFFRX2)            0.00       1.00 r
+  fn_sel_reg_reg[1]/Q (DFFRX2)             0.49       1.49 f
+  U4412/Y (NAND3X1)                        0.12       1.62 r
+  U4413/Y (INVX1)                          0.10       1.72 f
+  U4392/Y (OR2X1)                          0.32       2.04 f
+  U3712/Y (INVX6)                          0.23       2.27 r
+  U3855/Y (NAND2X4)                        0.19       2.45 f
+  U4414/Y (INVX6)                          0.19       2.64 r
+  U3684/Y (INVX3)                          0.16       2.80 f
+  U4752/Y (AOI211XL)                       0.19       2.98 r
+  U4760/Y (OAI211XL)                       0.12       3.11 f
+  U4761/Y (OAI22XL)                        0.30       3.41 r
+  U4762/Y (AOI2BB2X1)                      0.18       3.59 f
+  U4763/Y (INVX1)                          0.14       3.73 r
+  U4787/Y (NAND2X1)                        0.08       3.81 f
+  U4819/Y (NAND2X1)                        0.14       3.95 r
+  U4821/Y (INVX1)                          0.09       4.04 f
+  U4822/Y (NAND2X1)                        0.09       4.13 r
+  U4823/Y (NAND2X1)                        0.09       4.22 f
+  U3942/Y (OR2XL)                          0.19       4.41 f
+  U4825/Y (OAI211XL)                       0.12       4.53 r
+  U3552/Y (NOR2XL)                         0.10       4.63 f
+  U4387/Y (OA21XL)                         0.28       4.91 f
+  U3563/Y (NOR2XL)                         0.12       5.03 r
+  U4831/Y (OAI22XL)                        0.12       5.15 f
+  U4832/Y (AOI2BB2X1)                      0.26       5.41 f
+  U4833/Y (OAI22XL)                        0.22       5.63 r
+  R_r_reg[25]/D (DFFRX1)                   0.00       5.63 r
+  data arrival time                                   5.63
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              1.00       6.00
+  clock uncertainty                       -0.10       5.90
+  R_r_reg[25]/CK (DFFRX1)                  0.00       5.90 r
+  library setup time                      -0.27       5.63
+  data required time                                  5.63
+  -----------------------------------------------------------
+  data required time                                  5.63
+  data arrival time                                  -5.63
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

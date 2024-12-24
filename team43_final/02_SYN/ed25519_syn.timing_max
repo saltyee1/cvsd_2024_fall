@@ -1,0 +1,531 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : ed25519
+Version: Q-2019.12
+Date   : Mon Dec  9 10:52:43 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG708_S1
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: ed25519_alu/u_mm/R0_reg[199]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG708_S1/CK (DFFQX1)
+                                                          0.00 #     0.50 r
+  ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG708_S1/Q (DFFQX1)
+                                                          0.32       0.82 r
+  ed25519_alu/u_mm/U1/U30783/CO (ADDFXL)                  0.58       1.40 r
+  ed25519_alu/u_mm/U1/U30798/CO (ADDFXL)                  0.33       1.73 r
+  ed25519_alu/u_mm/U1/U7836/Y (OAI2BB1X1)                 0.20       1.92 r
+  ed25519_alu/u_mm/U1/U30817/CO (ADDFX1)                  0.44       2.36 r
+  ed25519_alu/u_mm/U1/U31399/CO (ADDFX1)                  0.44       2.80 r
+  ed25519_alu/u_mm/U1/U25021/CO (ADDFHX2)                 0.17       2.97 r
+  ed25519_alu/u_mm/U1/U7286/CO (ADDFX1)                   0.39       3.36 r
+  ed25519_alu/u_mm/U1/U16388/Y (INVXL)                    0.05       3.42 f
+  ed25519_alu/u_mm/U1/U24671/Y (NOR2BX1)                  0.19       3.61 f
+  ed25519_alu/u_mm/U1/U13058/Y (NOR2X1)                   0.17       3.78 r
+  ed25519_alu/u_mm/U1/U31442/Y (NAND2X1)                  0.12       3.90 f
+  ed25519_alu/u_mm/U1/U12404/Y (NOR2X2)                   0.10       4.00 r
+  ed25519_alu/u_mm/U1/U3015/Y (NAND2XL)                   0.14       4.14 f
+  ed25519_alu/u_mm/U1/U4141/Y (NOR2X2)                    0.15       4.29 r
+  ed25519_alu/u_mm/U1/U3013/Y (NAND2X2)                   0.08       4.37 f
+  ed25519_alu/u_mm/U1/U1400/Y (INVX4)                     0.08       4.45 r
+  ed25519_alu/u_mm/U1/U12599/Y (CLKINVX1)                 0.19       4.64 f
+  ed25519_alu/u_mm/U1/U33531/Y (NOR2XL)                   0.19       4.82 r
+  ed25519_alu/u_mm/U1/U12456/Y (AOI21X1)                  0.10       4.92 f
+  ed25519_alu/u_mm/U1/U24992/Y (XOR2X1)                   0.14       5.06 f
+  ed25519_alu/u_mm/U1/PRODUCT[454] (ModMul_DW02_mult_2_stage_J3_0)
+                                                          0.00       5.06 f
+  ed25519_alu/U11759/Y (OAI2BB1X2)                        0.15       5.22 f
+  ed25519_alu/u_mm/R0_reg[199]/D (DFFHQX2)                0.00       5.22 f
+  data arrival time                                                  5.22
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.50       5.50
+  clock uncertainty                                      -0.10       5.40
+  ed25519_alu/u_mm/R0_reg[199]/CK (DFFHQX2)               0.00       5.40 r
+  library setup time                                     -0.18       5.22
+  data required time                                                 5.22
+  --------------------------------------------------------------------------
+  data required time                                                 5.22
+  data arrival time                                                 -5.22
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG708_S1
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: ed25519_alu/u_mm/R0_reg[142]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG708_S1/CK (DFFQX1)
+                                                          0.00 #     0.50 r
+  ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG708_S1/Q (DFFQX1)
+                                                          0.32       0.82 r
+  ed25519_alu/u_mm/U1/U30783/CO (ADDFXL)                  0.58       1.40 r
+  ed25519_alu/u_mm/U1/U30798/CO (ADDFXL)                  0.33       1.73 r
+  ed25519_alu/u_mm/U1/U7836/Y (OAI2BB1X1)                 0.20       1.92 r
+  ed25519_alu/u_mm/U1/U30817/CO (ADDFX1)                  0.44       2.36 r
+  ed25519_alu/u_mm/U1/U31399/CO (ADDFX1)                  0.44       2.80 r
+  ed25519_alu/u_mm/U1/U25021/CO (ADDFHX2)                 0.17       2.97 r
+  ed25519_alu/u_mm/U1/U7286/CO (ADDFX1)                   0.39       3.36 r
+  ed25519_alu/u_mm/U1/U16388/Y (INVXL)                    0.05       3.42 f
+  ed25519_alu/u_mm/U1/U24671/Y (NOR2BX1)                  0.19       3.61 f
+  ed25519_alu/u_mm/U1/U13058/Y (NOR2X1)                   0.17       3.78 r
+  ed25519_alu/u_mm/U1/U31442/Y (NAND2X1)                  0.12       3.90 f
+  ed25519_alu/u_mm/U1/U12404/Y (NOR2X2)                   0.10       4.00 r
+  ed25519_alu/u_mm/U1/U3015/Y (NAND2XL)                   0.14       4.14 f
+  ed25519_alu/u_mm/U1/U4141/Y (NOR2X2)                    0.15       4.29 r
+  ed25519_alu/u_mm/U1/U3013/Y (NAND2X2)                   0.08       4.37 f
+  ed25519_alu/u_mm/U1/U1400/Y (INVX4)                     0.08       4.45 r
+  ed25519_alu/u_mm/U1/U12599/Y (CLKINVX1)                 0.19       4.64 f
+  ed25519_alu/u_mm/U1/U26405/Y (NOR2XL)                   0.19       4.82 r
+  ed25519_alu/u_mm/U1/U33850/Y (AOI21X1)                  0.10       4.92 f
+  ed25519_alu/u_mm/U1/U25028/Y (XOR2X1)                   0.14       5.06 f
+  ed25519_alu/u_mm/U1/PRODUCT[397] (ModMul_DW02_mult_2_stage_J3_0)
+                                                          0.00       5.06 f
+  ed25519_alu/U11755/Y (OAI2BB1X2)                        0.15       5.22 f
+  ed25519_alu/u_mm/R0_reg[142]/D (DFFHQX2)                0.00       5.22 f
+  data arrival time                                                  5.22
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.50       5.50
+  clock uncertainty                                      -0.10       5.40
+  ed25519_alu/u_mm/R0_reg[142]/CK (DFFHQX2)               0.00       5.40 r
+  library setup time                                     -0.18       5.22
+  data required time                                                 5.22
+  --------------------------------------------------------------------------
+  data required time                                                 5.22
+  data arrival time                                                 -5.22
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: ed25519_alu/u_mm/R0_reg[152]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG3790_S1
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  ed25519_alu/u_mm/R0_reg[152]/CK (DFFHQX4)               0.00 #     0.50 r
+  ed25519_alu/u_mm/R0_reg[152]/Q (DFFHQX4)                0.21       0.71 r
+  ed25519_alu/u_mm/U1/A[152] (ModMul_DW02_mult_2_stage_J3_0)
+                                                          0.00       0.71 r
+  ed25519_alu/u_mm/U1/U8545/Y (INVX4)                     0.07       0.79 f
+  ed25519_alu/u_mm/U1/U10767/Y (INVX12)                   0.20       0.98 r
+  ed25519_alu/u_mm/U1/U32968/Y (XOR2X4)                   0.16       1.15 r
+  ed25519_alu/u_mm/U1/U32970/Y (AND3X4)                   0.40       1.55 r
+  ed25519_alu/u_mm/U1/U4051/Y (CLKBUFX3)                  0.39       1.93 r
+  ed25519_alu/u_mm/U1/U4595/Y (BUFX2)                     0.50       2.44 r
+  ed25519_alu/u_mm/U1/U71895/Y (AOI222XL)                 0.24       2.68 f
+  ed25519_alu/u_mm/U1/U71896/Y (OAI21XL)                  0.18       2.86 r
+  ed25519_alu/u_mm/U1/U71897/Y (XOR2X1)                   0.22       3.08 f
+  ed25519_alu/u_mm/U1/U77702/S (ADDFX1)                   0.39       3.47 f
+  ed25519_alu/u_mm/U1/U18467/S (ADDFXL)                   0.65       4.11 f
+  ed25519_alu/u_mm/U1/U22356/S (ADDFXL)                   0.61       4.72 f
+  ed25519_alu/u_mm/U1/U80321/S (ADDFX1)                   0.44       5.16 f
+  ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG3790_S1/D (DFFQX4)
+                                                          0.00       5.16 f
+  data arrival time                                                  5.16
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.50       5.50
+  clock uncertainty                                      -0.10       5.40
+  ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG3790_S1/CK (DFFQX4)
+                                                          0.00       5.40 r
+  library setup time                                     -0.24       5.16
+  data required time                                                 5.16
+  --------------------------------------------------------------------------
+  data required time                                                 5.16
+  data arrival time                                                 -5.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: ed25519_alu/u_mm/R0_reg[110]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG5320_S1
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  ed25519_alu/u_mm/R0_reg[110]/CK (DFFHQX8)               0.00 #     0.50 r
+  ed25519_alu/u_mm/R0_reg[110]/Q (DFFHQX8)                0.30       0.80 r
+  ed25519_alu/u_mm/U1/A[110] (ModMul_DW02_mult_2_stage_J3_0)
+                                                          0.00       0.80 r
+  ed25519_alu/u_mm/U1/U14997/Y (XOR2X1)                   0.18       0.98 r
+  ed25519_alu/u_mm/U1/U4006/Y (AND3X1)                    0.44       1.41 r
+  ed25519_alu/u_mm/U1/U4964/Y (BUFX2)                     0.80       2.21 r
+  ed25519_alu/u_mm/U1/U56008/Y (AOI222XL)                 0.30       2.51 f
+  ed25519_alu/u_mm/U1/U56009/Y (OAI21XL)                  0.20       2.70 r
+  ed25519_alu/u_mm/U1/U56010/Y (XOR2X1)                   0.16       2.86 r
+  ed25519_alu/u_mm/U1/U26169/CO (ADDFXL)                  0.63       3.49 r
+  ed25519_alu/u_mm/U1/U1180/S (ADDFXL)                    0.43       3.92 r
+  ed25519_alu/u_mm/U1/U71223/S (ADDFX1)                   0.31       4.22 r
+  ed25519_alu/u_mm/U1/U104370/S (ADDFX1)                  0.39       4.61 f
+  ed25519_alu/u_mm/U1/U104373/CO (ADDFX1)                 0.27       4.88 f
+  ed25519_alu/u_mm/U1/U104374/S (ADDFHX1)                 0.27       5.15 f
+  ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG5320_S1/D (DFFQX1)
+                                                          0.00       5.15 f
+  data arrival time                                                  5.15
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.50       5.50
+  clock uncertainty                                      -0.10       5.40
+  ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG5320_S1/CK (DFFQX1)
+                                                          0.00       5.40 r
+  library setup time                                     -0.25       5.15
+  data required time                                                 5.15
+  --------------------------------------------------------------------------
+  data required time                                                 5.15
+  data arrival time                                                 -5.15
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG1436_S1
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: ed25519_alu/u_mm/R0_reg[245]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG1436_S1/CK (DFFQX1)
+                                                          0.00 #     0.50 r
+  ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG1436_S1/Q (DFFQX1)
+                                                          0.35       0.85 r
+  ed25519_alu/u_mm/U1/U33328/S (ADDFX1)                   0.42       1.26 f
+  ed25519_alu/u_mm/U1/U33331/S (ADDFXL)                   0.65       1.91 f
+  ed25519_alu/u_mm/U1/U2841/S (ADDFXL)                    0.72       2.63 f
+  ed25519_alu/u_mm/U1/U6002/Y (XNOR2X1)                   0.19       2.82 f
+  ed25519_alu/u_mm/U1/U7618/Y (XNOR2X1)                   0.16       2.99 r
+  ed25519_alu/u_mm/U1/U25937/Y (NOR2XL)                   0.09       3.08 f
+  ed25519_alu/u_mm/U1/U1780/Y (OR2X1)                     0.24       3.31 f
+  ed25519_alu/u_mm/U1/U1757/Y (NAND2BX1)                  0.21       3.53 f
+  ed25519_alu/u_mm/U1/U10654/Y (NOR2X2)                   0.10       3.63 r
+  ed25519_alu/u_mm/U1/U1669/Y (NAND2X1)                   0.12       3.75 f
+  ed25519_alu/u_mm/U1/U11834/Y (NOR2X4)                   0.11       3.86 r
+  ed25519_alu/u_mm/U1/U6881/Y (INVX1)                     0.05       3.91 f
+  ed25519_alu/u_mm/U1/U11833/Y (NAND2BX2)                 0.18       4.08 f
+  ed25519_alu/u_mm/U1/U12513/Y (NOR2X1)                   0.16       4.24 r
+  ed25519_alu/u_mm/U1/U2989/Y (NAND2X1)                   0.15       4.40 f
+  ed25519_alu/u_mm/U1/U35770/Y (NOR2XL)                   0.17       4.56 r
+  ed25519_alu/u_mm/U1/U35828/Y (INVXL)                    0.08       4.64 f
+  ed25519_alu/u_mm/U1/U12369/Y (OAI21XL)                  0.21       4.85 r
+  ed25519_alu/u_mm/U1/U8659/Y (AOI21X1)                   0.08       4.93 f
+  ed25519_alu/u_mm/U1/U10422/Y (XOR2X1)                   0.14       5.07 f
+  ed25519_alu/u_mm/U1/PRODUCT[500] (ModMul_DW02_mult_2_stage_J3_0)
+                                                          0.00       5.07 f
+  ed25519_alu/U3157/Y (OAI2BB1X1)                         0.17       5.25 f
+  ed25519_alu/u_mm/R0_reg[245]/D (DFFHQX4)                0.00       5.25 f
+  data arrival time                                                  5.25
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.50       5.50
+  clock uncertainty                                      -0.10       5.40
+  ed25519_alu/u_mm/R0_reg[245]/CK (DFFHQX4)               0.00       5.40 r
+  library setup time                                     -0.15       5.25
+  data required time                                                 5.25
+  --------------------------------------------------------------------------
+  data required time                                                 5.25
+  data arrival time                                                 -5.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: ed25519_alu/u_mm/R0_reg[77]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG5747_S1
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  ed25519_alu/u_mm/R0_reg[77]/CK (DFFHQX4)                0.00 #     0.50 r
+  ed25519_alu/u_mm/R0_reg[77]/Q (DFFHQX4)                 0.22       0.72 r
+  ed25519_alu/u_mm/U1/A[77] (ModMul_DW02_mult_2_stage_J3_0)
+                                                          0.00       0.72 r
+  ed25519_alu/u_mm/U1/U5214/Y (INVX6)                     0.08       0.79 f
+  ed25519_alu/u_mm/U1/U6255/Y (INVX20)                    0.14       0.94 r
+  ed25519_alu/u_mm/U1/U1790/Y (XOR2X2)                    0.19       1.12 f
+  ed25519_alu/u_mm/U1/U34348/Y (AND3X4)                   0.20       1.32 f
+  ed25519_alu/u_mm/U1/U4086/Y (CLKBUFX3)                  0.30       1.62 f
+  ed25519_alu/u_mm/U1/U12830/Y (BUFX2)                    0.26       1.88 f
+  ed25519_alu/u_mm/U1/U38759/Y (AOI222XL)                 0.35       2.23 r
+  ed25519_alu/u_mm/U1/U38760/Y (OAI21XL)                  0.14       2.37 f
+  ed25519_alu/u_mm/U1/U38761/Y (XOR2X1)                   0.12       2.48 r
+  ed25519_alu/u_mm/U1/U25861/CO (ADDFXL)                  0.72       3.20 r
+  ed25519_alu/u_mm/U1/U79942/CO (ADDFX1)                  0.44       3.64 r
+  ed25519_alu/u_mm/U1/U3331/CO (ADDFXL)                   0.60       4.25 r
+  ed25519_alu/u_mm/U1/U68864/CO (ADDFX1)                  0.41       4.65 r
+  ed25519_alu/u_mm/U1/U68867/S (ADDFX1)                   0.24       4.89 f
+  ed25519_alu/u_mm/U1/U68868/CO (ADDFX1)                  0.25       5.14 f
+  ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG5747_S1/D (DFFQX1)
+                                                          0.00       5.14 f
+  data arrival time                                                  5.14
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.50       5.50
+  clock uncertainty                                      -0.10       5.40
+  ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG5747_S1/CK (DFFQX1)
+                                                          0.00       5.40 r
+  library setup time                                     -0.26       5.14
+  data required time                                                 5.14
+  --------------------------------------------------------------------------
+  data required time                                                 5.14
+  data arrival time                                                 -5.14
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG1449_S1
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: ed25519_alu/u_mm/R0_reg[223]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG1449_S1/CK (DFFQX1)
+                                                          0.00 #     0.50 r
+  ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG1449_S1/Q (DFFQX1)
+                                                          0.32       0.82 r
+  ed25519_alu/u_mm/U1/U33310/S (ADDFXL)                   0.64       1.46 f
+  ed25519_alu/u_mm/U1/U33309/S (ADDFXL)                   0.67       2.13 f
+  ed25519_alu/u_mm/U1/U33312/S (ADDFXL)                   0.69       2.82 f
+  ed25519_alu/u_mm/U1/U1899/Y (OR2X1)                     0.28       3.10 f
+  ed25519_alu/u_mm/U1/U13307/Y (NAND2XL)                  0.11       3.21 r
+  ed25519_alu/u_mm/U1/U10657/Y (INVXL)                    0.05       3.26 f
+  ed25519_alu/u_mm/U1/U10656/Y (NOR2BX1)                  0.17       3.43 f
+  ed25519_alu/u_mm/U1/U10655/Y (NAND2XL)                  0.16       3.59 r
+  ed25519_alu/u_mm/U1/U10654/Y (NOR2X2)                   0.07       3.66 f
+  ed25519_alu/u_mm/U1/U1669/Y (NAND2X1)                   0.15       3.82 r
+  ed25519_alu/u_mm/U1/U11834/Y (NOR2X4)                   0.10       3.92 f
+  ed25519_alu/u_mm/U1/U6881/Y (INVX1)                     0.06       3.98 r
+  ed25519_alu/u_mm/U1/U11833/Y (NAND2BX2)                 0.15       4.13 r
+  ed25519_alu/u_mm/U1/U33368/Y (NOR2XL)                   0.08       4.21 f
+  ed25519_alu/u_mm/U1/U11370/Y (NOR2BX2)                  0.15       4.35 f
+  ed25519_alu/u_mm/U1/U1429/Y (NOR2X1)                    0.12       4.47 r
+  ed25519_alu/u_mm/U1/U11368/Y (OAI21X1)                  0.09       4.57 f
+  ed25519_alu/u_mm/U1/U11367/Y (AOI21XL)                  0.14       4.70 r
+  ed25519_alu/u_mm/U1/U12416/Y (OAI21XL)                  0.10       4.81 f
+  ed25519_alu/u_mm/U1/U12427/Y (AOI21X1)                  0.12       4.92 r
+  ed25519_alu/u_mm/U1/U25001/Y (XOR2X1)                   0.15       5.08 f
+  ed25519_alu/u_mm/U1/PRODUCT[478] (ModMul_DW02_mult_2_stage_J3_0)
+                                                          0.00       5.08 f
+  ed25519_alu/U11744/Y (OAI2BB1X1)                        0.17       5.25 f
+  ed25519_alu/u_mm/R0_reg[223]/D (DFFHQX8)                0.00       5.25 f
+  data arrival time                                                  5.25
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.50       5.50
+  clock uncertainty                                      -0.10       5.40
+  ed25519_alu/u_mm/R0_reg[223]/CK (DFFHQX8)               0.00       5.40 r
+  library setup time                                     -0.15       5.25
+  data required time                                                 5.25
+  --------------------------------------------------------------------------
+  data required time                                                 5.25
+  data arrival time                                                 -5.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: ed25519_alu/u_mm/R1_reg[60]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG5514_S1
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  ed25519_alu/u_mm/R1_reg[60]/CK (DFFQX4)                 0.00 #     0.50 r
+  ed25519_alu/u_mm/R1_reg[60]/Q (DFFQX4)                  0.26       0.76 f
+  ed25519_alu/u_mm/U1/B[60] (ModMul_DW02_mult_2_stage_J3_0)
+                                                          0.00       0.76 f
+  ed25519_alu/u_mm/U1/U3930/Y (CLKBUFX3)                  0.67       1.44 f
+  ed25519_alu/u_mm/U1/U12707/Y (BUFX2)                    0.71       2.15 f
+  ed25519_alu/u_mm/U1/U57751/Y (AOI222XL)                 0.47       2.62 r
+  ed25519_alu/u_mm/U1/U57752/Y (OAI21XL)                  0.14       2.76 f
+  ed25519_alu/u_mm/U1/U57753/Y (XOR2X1)                   0.16       2.92 f
+  ed25519_alu/u_mm/U1/U1370/S (ADDFXL)                    0.72       3.64 f
+  ed25519_alu/u_mm/U1/U92354/S (ADDFX1)                   0.41       4.05 f
+  ed25519_alu/u_mm/U1/U103123/CO (ADDFX1)                 0.40       4.45 f
+  ed25519_alu/u_mm/U1/U103338/CO (ADDFX1)                 0.28       4.73 f
+  ed25519_alu/u_mm/U1/U103125/S (ADDFX1)                  0.41       5.14 f
+  ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG5514_S1/D (DFFQX1)
+                                                          0.00       5.14 f
+  data arrival time                                                  5.14
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.50       5.50
+  clock uncertainty                                      -0.10       5.40
+  ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG5514_S1/CK (DFFQX1)
+                                                          0.00       5.40 r
+  library setup time                                     -0.26       5.14
+  data required time                                                 5.14
+  --------------------------------------------------------------------------
+  data required time                                                 5.14
+  data arrival time                                                 -5.14
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: ed25519_alu/cs_reg[0]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: P3_reg[478]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  ed25519_alu/cs_reg[0]/CK (DFFHQX4)       0.00 #     0.50 r
+  ed25519_alu/cs_reg[0]/Q (DFFHQX4)        0.23       0.73 f
+  ed25519_alu/U11456/Y (NAND2X2)           0.09       0.82 r
+  ed25519_alu/U521/Y (INVX3)               0.10       0.92 f
+  ed25519_alu/U11689/Y (NAND2X8)           0.14       1.06 r
+  ed25519_alu/U11736/Y (INVX12)            0.08       1.14 f
+  ed25519_alu/U2370/Y (INVX4)              0.05       1.19 r
+  ed25519_alu/U2356/Y (NAND2X4)            0.05       1.24 f
+  ed25519_alu/U1553/Y (NOR2X4)             0.10       1.34 r
+  ed25519_alu/U3029/Y (BUFX12)             0.12       1.46 r
+  ed25519_alu/U11982/Y (CLKINVX1)          0.20       1.66 f
+  ed25519_alu/U19240/Y (NAND2XL)           0.14       1.80 r
+  ed25519_alu/U19243/Y (NAND2XL)           0.08       1.88 f
+  ed25519_alu/U19244/Y (NAND2XL)           0.13       2.01 r
+  ed25519_alu/U19245/Y (INVXL)             0.06       2.07 f
+  ed25519_alu/U983/Y (NOR2XL)              0.18       2.25 r
+  ed25519_alu/U6733/Y (INVXL)              0.09       2.33 f
+  ed25519_alu/U19247/Y (NOR2XL)            0.18       2.52 r
+  ed25519_alu/U19248/Y (NOR2XL)            0.10       2.62 f
+  ed25519_alu/U19303/Y (AOI21XL)           0.21       2.83 r
+  ed25519_alu/U366/Y (OAI21XL)             0.12       2.95 f
+  ed25519_alu/U20948/Y (AOI21XL)           0.17       3.12 r
+  ed25519_alu/U3182/Y (OAI21X1)            0.10       3.22 f
+  ed25519_alu/U20949/Y (AOI21X1)           0.17       3.39 r
+  ed25519_alu/U23777/Y (OAI21XL)           0.10       3.50 f
+  ed25519_alu/U3184/Y (AOI21XL)            0.17       3.67 r
+  ed25519_alu/U23780/Y (OAI21XL)           0.12       3.79 f
+  ed25519_alu/U23783/Y (AOI21XL)           0.19       3.98 r
+  ed25519_alu/U23786/Y (OAI21XL)           0.14       4.12 f
+  ed25519_alu/U23789/Y (AOI21XL)           0.19       4.30 r
+  ed25519_alu/U23792/Y (XOR2X1)            0.19       4.49 f
+  ed25519_alu/U23807/Y (MXI2X1)            0.19       4.68 r
+  ed25519_alu/U23810/Y (AOI2BB1X1)         0.17       4.85 r
+  ed25519_alu/U236/Y (OAI2BB1XL)           0.12       4.96 f
+  ed25519_alu/opoint[478] (point_alu)      0.00       4.96 f
+  U11374/Y (NAND2XL)                       0.10       5.07 r
+  U11373/Y (OAI21XL)                       0.07       5.14 f
+  P3_reg[478]/D (DFFQX1)                   0.00       5.14 f
+  data arrival time                                   5.14
+
+  clock i_clk (rise edge)                  5.00       5.00
+  clock network delay (ideal)              0.50       5.50
+  clock uncertainty                       -0.10       5.40
+  P3_reg[478]/CK (DFFQX1)                  0.00       5.40 r
+  library setup time                      -0.26       5.14
+  data required time                                  5.14
+  -----------------------------------------------------------
+  data required time                                  5.14
+  data arrival time                                  -5.14
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: ed25519_alu/u_mm/R1_reg[37]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG5698_S1
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  ed25519_alu/u_mm/R1_reg[37]/CK (DFFHQX4)                0.00 #     0.50 r
+  ed25519_alu/u_mm/R1_reg[37]/Q (DFFHQX4)                 0.20       0.70 f
+  ed25519_alu/u_mm/U1/B[37] (ModMul_DW02_mult_2_stage_J3_0)
+                                                          0.00       0.70 f
+  ed25519_alu/u_mm/U1/U2684/Y (BUFX12)                    0.15       0.85 f
+  ed25519_alu/u_mm/U1/U2274/Y (NOR2X1)                    0.15       1.00 r
+  ed25519_alu/u_mm/U1/U13205/Y (NOR2X2)                   0.09       1.09 f
+  ed25519_alu/u_mm/U1/U2097/Y (NAND2X2)                   0.10       1.19 r
+  ed25519_alu/u_mm/U1/U24384/Y (OAI21X4)                  0.10       1.29 f
+  ed25519_alu/u_mm/U1/U24383/Y (AOI21X4)                  0.16       1.45 r
+  ed25519_alu/u_mm/U1/U24382/Y (AOI2BB1X4)                0.17       1.62 r
+  ed25519_alu/u_mm/U1/U4458/Y (NAND2X6)                   0.10       1.72 f
+  ed25519_alu/u_mm/U1/U11795/Y (NAND2X4)                  0.09       1.81 r
+  ed25519_alu/u_mm/U1/U4405/Y (NAND3X6)                   0.11       1.92 f
+  ed25519_alu/u_mm/U1/U5626/Y (BUFX20)                    0.15       2.07 f
+  ed25519_alu/u_mm/U1/U2765/Y (AOI21X1)                   0.18       2.25 r
+  ed25519_alu/u_mm/U1/U11650/Y (XNOR2X4)                  0.35       2.60 f
+  ed25519_alu/u_mm/U1/U8820/Y (OAI21XL)                   0.31       2.91 r
+  ed25519_alu/u_mm/U1/U49760/Y (XOR2X1)                   0.23       3.14 f
+  ed25519_alu/u_mm/U1/U26888/S (ADDFXL)                   0.68       3.82 f
+  ed25519_alu/u_mm/U1/U638/S (ADDFXL)                     0.67       4.48 f
+  ed25519_alu/u_mm/U1/U23728/S (ADDFXL)                   0.64       5.13 f
+  ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG5698_S1/D (DFFQX1)
+                                                          0.00       5.13 f
+  data arrival time                                                  5.13
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.50       5.50
+  clock uncertainty                                      -0.10       5.40
+  ed25519_alu/u_mm/U1/mult_x_1/i_clk_r_REG5698_S1/CK (DFFQX1)
+                                                          0.00       5.40 r
+  library setup time                                     -0.27       5.13
+  data required time                                                 5.13
+  --------------------------------------------------------------------------
+  data required time                                                 5.13
+  data arrival time                                                 -5.13
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

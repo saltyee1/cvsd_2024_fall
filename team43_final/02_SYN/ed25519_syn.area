@@ -1,0 +1,45 @@
+ 
+****************************************
+Report : area
+Design : ed25519
+Version: Q-2019.12
+Date   : Mon Dec  9 10:52:43 2024
+****************************************
+
+Library(s) Used:
+
+    slow (File: /cad/designkit/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                         3457
+Number of nets:                        201411
+Number of cells:                       176108
+Number of combinational cells:         164046
+Number of sequential cells:             12054
+Number of macros/black boxes:               0
+Number of buf/inv:                      17320
+Number of references:                      89
+
+Combinational area:            1971469.009816
+Buf/Inv area:                    73044.213332
+Noncombinational area:          317262.736431
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:               2288731.746247
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area                Local cell area
+                                  ---------------------  --------------------------------- 
+Hierarchical cell                 Absolute      Percent  Combi-        Noncombi-    Black-
+                                  Total         Total    national      national     boxes   Design
+--------------------------------  ------------  -------  ------------  -----------  ------  -----------------------------
+ed25519                           2288731.7462    100.0   101550.3485  101626.7344  0.0000  ed25519
+ed25519_alu                       2085554.6634     91.1   316264.6603   60894.2260  0.0000  point_alu
+ed25519_alu/u_mm/U1               1708395.7771     74.6  1553654.0010  154741.7761  0.0000  ModMul_DW02_mult_2_stage_J3_0
+--------------------------------  ------------  -------  ------------  -----------  ------  -----------------------------
+Total                                                    1971469.0098  317262.7364  0.0000
+
+1

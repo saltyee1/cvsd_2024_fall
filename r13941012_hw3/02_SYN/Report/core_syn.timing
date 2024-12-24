@@ -1,0 +1,82 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'core' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : core
+Version: U-2022.12
+Date   : Sun Nov  3 03:03:04 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: pe_gen[0].u_pe/i_clk_r_REG693_S3
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: pe_gen[0].u_pe/i_clk_r_REG578_S12
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core               tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  pe_gen[0].u_pe/i_clk_r_REG693_S3/CK (DFFSX1)            0.00 #     0.50 r
+  pe_gen[0].u_pe/i_clk_r_REG693_S3/Q (DFFSX1)             0.60       1.10 r
+  pe_gen[0].u_pe/U113/Y (NAND2X4)                         0.19       1.29 f
+  pe_gen[0].u_pe/U553/Y (OA21X4)                          0.38       1.67 f
+  pe_gen[0].u_pe/U581/Y (OAI22X2)                         0.22       1.89 r
+  pe_gen[0].u_pe/U582/Y (XOR2X4)                          0.22       2.11 f
+  pe_gen[0].u_pe/U69/Y (NAND2X1)                          0.30       2.41 r
+  pe_gen[0].u_pe/U590/Y (OAI21X2)                         0.18       2.59 f
+  pe_gen[0].u_pe/U591/Y (AOI21X4)                         0.15       2.74 r
+  pe_gen[0].u_pe/U592/Y (OAI21X4)                         0.12       2.87 f
+  pe_gen[0].u_pe/U595/Y (AOI21X4)                         0.19       3.05 r
+  pe_gen[0].u_pe/U600/Y (OAI21X4)                         0.14       3.19 f
+  pe_gen[0].u_pe/U602/Y (AOI21X4)                         0.20       3.39 r
+  pe_gen[0].u_pe/U605/Y (OAI21X4)                         0.10       3.49 f
+  pe_gen[0].u_pe/U271/Y (XNOR2X2)                         0.30       3.79 r
+  pe_gen[0].u_pe/U256/Y (INVX6)                           0.28       4.07 f
+  pe_gen[0].u_pe/U689/Y (XOR2X1)                          0.33       4.41 f
+  pe_gen[0].u_pe/U696/Y (NAND2X2)                         0.20       4.61 r
+  pe_gen[0].u_pe/U697/Y (CLKINVX1)                        0.18       4.79 f
+  pe_gen[0].u_pe/U698/Y (AOI21X4)                         0.20       4.99 r
+  pe_gen[0].u_pe/U700/Y (OAI21X4)                         0.15       5.14 f
+  pe_gen[0].u_pe/U703/Y (AOI21X4)                         0.22       5.36 r
+  pe_gen[0].u_pe/U711/Y (OAI21X4)                         0.13       5.49 f
+  pe_gen[0].u_pe/U723/Y (AOI21X4)                         0.17       5.66 r
+  pe_gen[0].u_pe/U114/Y (OA21X4)                          0.21       5.87 r
+  pe_gen[0].u_pe/U733/Y (OAI21X4)                         0.11       5.98 f
+  pe_gen[0].u_pe/U736/Y (AO21X4)                          0.24       6.22 f
+  pe_gen[0].u_pe/U738/Y (OAI2BB1X4)                       0.19       6.41 f
+  pe_gen[0].u_pe/U741/Y (AOI21X4)                         0.21       6.61 r
+  pe_gen[0].u_pe/U742/Y (XOR2X1)                          0.28       6.89 r
+  pe_gen[0].u_pe/U744/Y (AND2X4)                          0.20       7.09 r
+  pe_gen[0].u_pe/U745/Y (AO22X4)                          0.15       7.24 r
+  pe_gen[0].u_pe/i_clk_r_REG578_S12/D (DFFRX2)            0.00       7.24 r
+  data arrival time                                                  7.24
+
+  clock i_clk (rise edge)                                 7.00       7.00
+  clock network delay (ideal)                             0.50       7.50
+  clock uncertainty                                      -0.10       7.40
+  pe_gen[0].u_pe/i_clk_r_REG578_S12/CK (DFFRX2)           0.00       7.40 r
+  library setup time                                     -0.16       7.24
+  data required time                                                 7.24
+  --------------------------------------------------------------------------
+  data required time                                                 7.24
+  data arrival time                                                 -7.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
